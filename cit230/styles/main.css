@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 45px;
-    color: darkslateblue;
+    color: Black;
     text-align: center;
 }
 
@@ -31,7 +31,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: lightcyan;
+    background-color: darksalmon;
     color: whitesmoke;
 }
 
