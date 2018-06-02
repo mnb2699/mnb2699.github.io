@@ -1,0 +1,59 @@
+@media only screen and (min-width: 600px) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    section.forecast { display: contents;}  /* show the 10-day forecast with the medium view and up */
+ 
+    nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+    display: block;
+}
+
+nav ul.hide {
+    display: contents;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+nav ul li.active a {
+    background-color: darkorange;
+}
+
+nav ul li a:hover {
+    background-color: orangered;
+}
+
+    .nav .icon {
+        display: contents;
+    }
+    
+main h2 {
+    text-align: center;
+}
+    
+}
+
