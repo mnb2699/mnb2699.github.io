@@ -1,39 +1,17 @@
-var currentDate = new Date();
+var myDate = new Date();
 
-var getFullYear();
-var getDate();
+var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
 
-var daysOfWeek = new Array(7);
-daysOfWeek[0] = "Sunday";
-daysOfWeek[1] = "Monday";
-daysOfWeek[2] = "Tuesday";
-daysOfWeek[3] = "Wednesday";
-daysOfWeek[4] = "Thursday";
-daysOfWeek[5] = "Friday";
-daysOfWeek[6] = "Saturday";
+var daysOfWeek = myDate.getDate();
+var daysOfWeekString = weekDays[daysOfWeek];
 
-var daysOfWeekNumber = currentDate.getDate();
-var daysOfWeekString = daysOfWeek[daysOfWeekNumber];
+var daysOfMonth = myDate.getDate();
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ];
+var month = myDate.getMonth();
+var monthString = months[month];
 
-var daysOfMonth = currentDate.getDate();
+var fullYear = myDate.getFullYear();
 
-var daysOfMonth = new Array(12);
-daysOfMonth[0] = "January"
-daysOfMonth[1] = "February"
-daysOfMonth[2] = "March"
-daysOfMonth[3] = "April"
-daysOfMonth[4] = "May"
-daysOfMonth[5] = "June"
-daysOfMonth[6] = "July"
-daysOfMonth[7] = "August"
-daysOfMonth[8] = "September"
-daysOfMonth[9] = "October"
-daysOfMonth[10] = "November"
-daysOfMonth[11] = "December"
+var fullDate = daysOfWeekString + ", " + daysOfMonth + " " + monthString + ", " + fullYear;
 
-var myDate = daysOfWeek + "," + getDate + '' + daysOfMonth + '' + getFullYear;
-
-function date() {
-    document.getElementById("currentDate").classList("footer-bar") = myDate;
-
-}
+document.getElementById("currentdate").innerHTML = fullDate;
