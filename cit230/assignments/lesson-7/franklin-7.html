@@ -16,7 +16,7 @@
 
 <body>
 
-    <header>
+    <header>World of Weather
     </header>
 
     <nav class="clearfix">
@@ -27,7 +27,7 @@
             <li><a href="#greenville">Greenville</a></li>
             <li><a href="#springfield">Springfield</a></li>
             <li><a href="#storm">Storm Center</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
         </ul>
     </nav>
@@ -35,16 +35,15 @@
     <main>
         <h2> The City of Franklin</h2>
         <figure>
-        <img src="images/franklin-mobile.jpg"
-            srcset="images/franklin-web.jpg 1200w,
+            <img src="images/franklin-mobile.jpg" srcset="images/franklin-web.jpg 1200w,
             images/franklin-medium.jpg 800w,
             images/franklin-mobile.jpg 400w">
         </figure>
         <section class="weather-summary">
             <h3>Weather Summary</h3>
             <div class="highlow">
-                <p>High:</p>
-                <p>Low:</p>
+                <p>High:67 &deg;</p>
+                <p>Low:43 &deg;</p>
             </div>
             <div class="current">
                 Sunny
@@ -54,7 +53,8 @@
             </div>
             <div class="conditions">
                 <p>Precipitation:</p>
-                <p>Wind Speed:</p>
+                <p id="windspeed">Wind Speed: 8 mph</p>
+                Wind Chill:<p id=windchill>Wind Chill:</p>
             </div>
         </section>
 
@@ -111,6 +111,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 
