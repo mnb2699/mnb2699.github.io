@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Report the Weather</h1>
+        <form action="thanks.html" method="get">
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" title="Min of 5 characters." pattern="[A-Za-z]{5,}" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="name@domain.com">
+            </div>
+            <div>
+                <label for="date" id="date">Date:</label>
+                <input type="date">
+            </div>
+            <div>
+                <span>Are you in Danger?</span><br>
+                <input type="radio" name="danger" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="danger" value="no">
+                <label for="no">No</label>
+                <input type="radio" name="danger" value="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+
+
+
+
+
+
+            <div>
+                <input type="submit" value="Save">
+            </div>
+        </form>
+
+
+
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+
+
+//need to drag over franklin to have correct header and footer, need a plain thanks.html page, all of these are inline so you need to format them //fix the requirement thing on line 18

@@ -109,13 +109,13 @@ section.forecast {
   
 }
 
- .grid{
-        box-shadow: 10px 10px;
-    }
-
 .grid {
     max-width: 25%;
     padding: 0 0px;
 }
+
+  .grid:hover{
+        box-shadow: 250px -5px;
+    }
 
 footer {}
