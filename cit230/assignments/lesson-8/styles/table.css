@@ -4,6 +4,7 @@ table {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 tr, th, td {
     border: 1px solid black; 
     padding: 5px;
@@ -26,14 +27,18 @@ th {
     background-color: #7fb9c2;
 }
 
-tr:nth-child(1){
+th {
     font-size: 20px;
 }
 
-tfoot{
-    background-color: #7fb9c2;
+tr:nth-child(2){
+    text-align: center;
+}
+
+tfoot {
     font-size: 11px;
     text-align: center;
+    background-color: #7fb9c2;
 }
 
 
