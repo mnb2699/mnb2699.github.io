@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/form.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Site Project</title>
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/main-8.css" rel="stylesheet" type="text/css">
+    <link href="styles/medium-8.css" rel="stylesheet" type="text/css">
+    <link href="styles/large-8.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>World of Weather
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navMenu" class="hide">
+            <li><a href="#home">Home</a></li>
+            <li><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="#greenville">Greenville</a></li>
+            <li><a href="#springfield">Springfield</a></li>
+            <li class="active"><a href="#storm">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
+        </ul>
+    </nav>
+
+
+    <header></header>
+    <main>
+        <h1>Report the Weather</h1>
+        <form action="thanks.html" method="get">
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" title="Min of 5 characters." pattern="[A-Za-z]+{5,50}" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="name@domain.com">
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="zip">Zip Code:</label>
+                <input type="number" name="zip" required>
+            </div>
+            <div>
+                <label for="date" id="date">Storm Date:</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="sev">Storm Severity:</label>
+                <input type="range" min="1" max="10" name="range" class="slider" id="myRange">
+            </div>
+            <div>
+                <label for="region">Storm Region:</label>
+                <select>
+                    <option value="selectRegion">Select Region</option>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Springfield">Springfield</option>
+                    <option value="Greenville">Greenville</option>
+                </select>
+            </div>
+            <div>
+                <span>Are you in Danger?</span><br>
+                <input type="radio" name="danger" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="danger" value="no">
+                <label for="no">No</label>
+                <input type="radio" name="danger" value="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+            <div>
+                <label for="comments">Additional Comments:</label>
+                <input type="text" name="comments">
+            </div>
+
+
+
+
+
+            <div>
+                <input type="submit" value="Save">
+            </div>
+        </form>
+
+
+
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | World of Weather | <span id="currentdate">Current Date Placeholder</span>
+        </section>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
+
+
+// work on range bar
