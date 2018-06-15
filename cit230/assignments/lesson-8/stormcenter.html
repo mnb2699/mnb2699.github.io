@@ -38,9 +38,11 @@
 
 
     <header></header>
-    <main>
+    <main class="form">
         <h1>Report the Weather</h1>
+        <p> This is where you can report storms! <br>Fill this out and hit sumbit! </p>
         <form action="thanks.html" method="get">
+           <h3>Personal Information:</h3>
             <div>
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" title="Min of 5 characters." pattern="[A-Za-z]+{5,50}" required>
@@ -58,12 +60,25 @@
                 <input type="number" name="zip" required>
             </div>
             <div>
+               <h3>Storm Information:</h3>
                 <label for="date" id="date">Storm Date:</label>
                 <input type="date">
             </div>
+                        <div>
+                <label for="stormType">Storm Type:</label>
+               <input list="mine">
+               <datalist id="mine">
+                   <option value="Flash Flood">Flash Flood</option>
+                   <option value="Hail">Hail</option>
+                   <option value="Hurricane">Hurricane</option>
+                   <option value="Thunderstorm">Thunderstorm</option>
+                   <option value="Tornado">Tornado</option>
+               </datalist>
+            </div>
             <div>
-                <label for="sev">Storm Severity:</label>
-                <input type="range" min="1" max="10" name="range" class="slider" id="myRange">
+                <label for="sev">Storm Severity: </label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
             </div>
             <div>
                 <label for="region">Storm Region:</label>
@@ -77,15 +92,15 @@
             <div>
                 <span>Are you in Danger?</span><br>
                 <input type="radio" name="danger" value="yes">
-                <label for="yes">Yes</label>
+                <label for="yes">Yes</label><br>
                 <input type="radio" name="danger" value="no">
-                <label for="no">No</label>
+                <label for="no">No</label><br>
                 <input type="radio" name="danger" value="maybe">
                 <label for="maybe">Maybe</label>
             </div>
+            <h3>Additional Comments:</h3>
             <div>
-                <label for="comments">Additional Comments:</label>
-                <input type="text" name="comments">
+                <textarea name="comment" rows="4" cols="50">Start Typing Here...</textarea>
             </div>
 
 
@@ -93,7 +108,7 @@
 
 
             <div>
-                <input type="submit" value="Save">
+                <input type="submit" value="Submit">
             </div>
         </form>
 
@@ -118,4 +133,4 @@
 </html>
 
 
-// work on range bar
+
