@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Site Project</title>
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/main-9.css" rel="stylesheet" type="text/css">
+    <link href="styles/medium-9.css" rel="stylesheet" type="text/css">
+    <link href="styles/large-9.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>World of Weather
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navMenu" class="hide">
+            <li><a href="#home">Home</a></li>
+            <li><a href="franklin-9.html">Franklin</a></li>
+            <li><a href="#greenville">Greenville</a></li>
+            <li><a href="#springfield">Springfield</a></li>
+            <li class="active"><a href="#storm">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
+        </ul>
+    </nav>
+
+
+    <header></header>
+    <main class="form">
+        <h1>Report the Weather</h1>
+        <p> This is where you can report storms! <br>Fill this out and hit sumbit! </p>
+        <form action="thanks.html" method="get">
+           <h3>Personal Information:</h3>
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" title="Min of 5 characters." pattern="[A-Za-z]+{5,50}" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="name@domain.com">
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="zip">Zip Code:</label>
+                <input type="number" name="zip" required>
+            </div>
+            <div>
+               <h3>Storm Information:</h3>
+                <label for="date" id="date">Storm Date:</label>
+                <input type="date">
+            </div>
+                        <div>
+                <label for="stormType">Storm Type:</label>
+               <input list="mine">
+               <datalist id="mine">
+                   <option value="Flash Flood">Flash Flood</option>
+                   <option value="Hail">Hail</option>
+                   <option value="Hurricane">Hurricane</option>
+                   <option value="Thunderstorm">Thunderstorm</option>
+                   <option value="Tornado">Tornado</option>
+               </datalist>
+            </div>
+            <div>
+                <label for="sev">Storm Severity: </label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
+            </div>
+            <div>
+                <label for="region">Storm Region:</label>
+                <select>
+                    <option value="selectRegion">Select Region</option>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Springfield">Springfield</option>
+                    <option value="Greenville">Greenville</option>
+                </select>
+            </div>
+            <div>
+                <span>Are you in Danger?</span><br>
+                <input type="radio" name="danger" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="danger" value="no">
+                <label for="no">No</label><br>
+                <input type="radio" name="danger" value="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+            <h3>Additional Comments:</h3>
+            <div>
+                <textarea name="comment" rows="4" cols="50">Start Typing Here...</textarea>
+            </div>
+
+
+
+
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+
+
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | World of Weather | <span id="currentdate">Current Date Placeholder</span>
+        </section>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
