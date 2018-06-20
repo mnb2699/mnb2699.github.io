@@ -22,14 +22,13 @@ footer {
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-header {
+.world {
     font-size: 82px;
     color: black;
     text-align: center;
 
 }
-
-h2 {
+.city {
     display: flex;
     justify-content: center;
     font-size: 30px;
