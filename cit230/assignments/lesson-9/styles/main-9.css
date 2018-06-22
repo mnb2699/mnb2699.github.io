@@ -117,8 +117,9 @@ section.forecast {
     padding: 0 0px;
 }
 
-table{
-    padding: 10px;
+.clips{
+    padding: 5px;
+    align-content: center;
 }
 
 td{
@@ -126,6 +127,11 @@ td{
     text-align: center;
 }
 
+.story{
+    display: none;
+}
+
 
 
 footer {}
+
