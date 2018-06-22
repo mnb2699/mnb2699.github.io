@@ -51,3 +51,15 @@ var header = document.querySelector('header');
                 section.appendChild(myArticle);
             }
         }
+
+
+xmlHttpRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zop=55333 put link in here' true);
+XMLHttpRequest.onload = function(){
+    var weather = XMLHttpRequest.response;
+    
+    console.log(weather);
+    
+    document.getElementById("cityf").innerHTML = weather.name;
+    document.getElementById("tempf").innerHTML = weather.main.temp;
+    document.getElementById("speedf").innerHTML = weather.wind.f;
+}

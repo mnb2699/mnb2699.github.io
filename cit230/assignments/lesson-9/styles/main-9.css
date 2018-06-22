@@ -117,4 +117,15 @@ section.forecast {
     padding: 0 0px;
 }
 
+table{
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+
+
 footer {}
