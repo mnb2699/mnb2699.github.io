@@ -108,7 +108,9 @@ main figure {
     margin: 0 0 .2rem 2%;
 }
 
-main figure img {}
+main figure img {
+    
+}
 
 section.forecast {
     display: none;

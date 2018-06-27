@@ -1,3 +1,5 @@
+function setCurrentDate()
+{
 var myDate = new Date();
 
 var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -15,3 +17,4 @@ var fullYear = myDate.getFullYear();
 var fullDate = daysOfWeekString + ", " + daysOfMonth + " " + monthString + ", " + fullYear;
 
 document.getElementById("currentdate").innerHTML = fullDate;
+}

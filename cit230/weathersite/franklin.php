@@ -1,36 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weather Site Project</title>
-    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link href="styles/medium.css" rel="stylesheet" type="text/css">
-    <link href="styles/large.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-
-</head>
+<?php include '_header.php'; ?>
 
 <body>
-
-    <header class="world">World of Weather
-    </header>
-
-       <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="navMenu" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="franklin.html">Franklin</a></li>
-            <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springfield.html">Springfield</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
-        </ul>
-    </nav>
     <main>
         <h2 class="city"> The City of Franklin</h2>
         <figure>
@@ -100,20 +70,5 @@
         </article>
 
     </main>
-
-    <footer>
-        <section class="contact">
-            Meghan Brennan 999.999.9999 123 Main St. Anytown, US 99999 Google Map
-        </section>
-        <section class="footer-bar">&copy;2018 | All Rights Reserved | World of Weather | <span id="currentdate">Current Date Placeholder</span>
-        </section>
-    </footer>
-
-
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
-
-</body>
-
-</html>
+    
+    <?php include '_footer.php'; ?>

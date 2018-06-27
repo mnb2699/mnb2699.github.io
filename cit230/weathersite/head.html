@@ -1,51 +1,35 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weather Site Project</title>
-    <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href="main.css" rel="stylesheet" type="text/css">
-    <link href="medium.css" rel="stylesheet" type="text/css">
-    <link href="large.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-
-</head>
-
-<body>
-
-    <header class="world">World of Weather
-    </header>
-
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="navMenu" class="hide">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="franklin">Franklin</a></li>
-            <li><a href="greenville">Greenville</a></li>
-            <li><a href="springfield">Springfield</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
-        </ul>
-    </nav>
+creat folder called modules
+put content in the header in this page
+<img src="" alt="site logo"
 
 
-    <footer>
-        <section class="contact">
-            Meghan Brennan 999.999.9999 123 Main St. Anytown, US 99999 Google Map
-        </section>
-        <section class="footer-bar">&copy;2018 | All Rights Reserved | World of Weather | <span id="currentdate">Current Date Placeholder</span>
-        </section>
-    </footer>
+header file
+footer file
+scripts file
+<botton onllcik="toggleNavMenu()"&#33;
 
 
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+**add this in the city pages 
+<header w3-include-html="modules/header.html"></header>
+<nav w3-include-html="modules/nav.html"></nav>
+also do it for ul
+also for footer 
 
-</body>
 
-</html>
+create a new scripts in your scripts footer we.js
+js file on df and make the w3-include 
+
+also create a modularize.js file 
+ w3.includeHTML(function(){
+ setCurrentDate();
+ setActiveLink();});
+
+
+dont put the title in the head html file 
+
+
+make sure to wrap currentDate into a file 
+wayfinding is on the reading 
+
+
+<img src="images/globe.jpg" alt="logo"> put this in all files 

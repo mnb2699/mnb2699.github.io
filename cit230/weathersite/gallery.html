@@ -2,14 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weather Site Project</title>
-    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link href="styles/medium.css" rel="stylesheet" type="text/css">
-    <link href="styles/large.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <title>Gallery</title>
 </head>
 
@@ -20,12 +12,12 @@
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="navMenu" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class=""><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
             <li><a href="springfield.html">Springfield</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
             <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
         </ul>
     </nav>
@@ -38,10 +30,29 @@
        <div class="grid"><img src="images/sunset.jpg">Sunset</div>
        <div class="grid"><img src="images/thunder.jpg">Lightning</div>
     </div>
+    <footer w3-include-html="modules/footer.html"></footer>
     
+     <script src="scripts/w3.js"></script>
     <script src="scripts/hamburger.js"></script>
 
 </body>
 
+<script>
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+        menu = document.querySelectorAll('ul#navMenu li a');
+        for (i = 0; i < menu.length; i++) {
+            currentURL = (menu[i].getAttribute('href'));
+            menu[i].parentNode.className = '';
+            if (currentURL === pageHREF) {
+                menu[i].parentNode.className = 'active';
+            }
+        }
+    }
+
+</script>
 
 </html>
