@@ -60,6 +60,8 @@ nav {
     padding: 0;
     display: flex;
     flex-grow: 1;
+    background-color: yellowgreen;
+    
 }
 
 nav ul {
@@ -67,16 +69,19 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #F3D1C8;
+    background-color: yellowgreen;
     display: inline-grid;
+    
 }
 
 nav ul.hide {
     display: none;
+    
 }
 
 nav ul li {
     display: flex;
+    
 }
 
 nav ul li a {
@@ -85,12 +90,12 @@ nav ul li a {
     padding: 14px 16px;
     text-decoration: none;
     flex-grow: 1;
-
     
 }
 
 nav ul li.active a {
-    background-color: lightcoral;
+    background-color: darkblue;
+    color: white;
 }
 
 nav ul li a:hover {
@@ -154,5 +159,6 @@ td{
     margin-right: auto;
     width: 90%;
     }
+
 
 footer {}

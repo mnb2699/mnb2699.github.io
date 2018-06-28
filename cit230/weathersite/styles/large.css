@@ -23,7 +23,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #F3D1C8;
+        background-color: darkblue;
         display:
     }
 
@@ -42,7 +42,8 @@
     }
 
  nav ul li.active a {
-    background-color: lightcoral;
+    background-color: darkblue;
+    color: white;
 }
 
 nav ul li a:hover {

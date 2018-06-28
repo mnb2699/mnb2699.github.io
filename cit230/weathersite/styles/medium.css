@@ -38,7 +38,8 @@
     }
 
     nav ul li.active a {
-        background-color: lightcoral;
+        background-color: darkblue;
+    color: white;
     }
 
     nav ul li a:hover {
