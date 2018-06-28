@@ -1,57 +1,45 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
 
-<head>
+<head w3-include-html="modules/head.html">
+
     <title>Gallery</title>
+
 </head>
 
 <body>
-    <header class="world">World of Weather
+
+    <header w3-include-html="modules/header.html">
     </header>
 
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="navMenu" class="hide">
-            <li class=""><a href="index.html">Home</a></li>
-            <li><a href="franklin.html">Franklin</a></li>
-            <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springfield.html">Springfield</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li class="active"><a href="gallery.html">Gallery</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
-        </ul>
+    <nav w3-include-html="modules/nav.html">
     </nav>
 
-   <div class="grid-container">
-       <div class="grid"><img src="images/cloud.jpg">Clouds</div>
-       <div class="grid"><img src="images/flower.jpg">Flowers</div>
-       <div class="grid"><img src="images/hurrican.jpg">Hurrican From Space</div>
-       <div class="grid"><img src="images/rain.jpg">Rain</div>
-       <div class="grid"><img src="images/sunset.jpg">Sunset</div>
-       <div class="grid"><img src="images/thunder.jpg">Lightning</div>
+    <div class="grid-container">
+        <div class="grid"><img src="images/cloud.jpg">Clouds</div>
+        <div class="grid"><img src="images/flower.jpg">Flowers</div>
+        <div class="grid"><img src="images/hurrican.jpg">Hurrican From Space</div>
+        <div class="grid"><img src="images/rain.jpg">Rain</div>
+        <div class="grid"><img src="images/sunset.jpg">Sunset</div>
+        <div class="grid"><img src="images/thunder.jpg">Lightning</div>
     </div>
     <footer w3-include-html="modules/footer.html"></footer>
-    
-     <script src="scripts/w3.js"></script>
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/wayfinding.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/modularize.js"></script>
+
+    <footer w3-include-html="modules/head.html">
+    </footer>
 
 </body>
 
-<script>
-    var urlString = document.location.href;
-    var urlArray = urlString.split('/');
-    var pageHREF = urlArray[urlArray.length - 1];
 
-    if (pageHREF !== "") {
-        menu = document.querySelectorAll('ul#navMenu li a');
-        for (i = 0; i < menu.length; i++) {
-            currentURL = (menu[i].getAttribute('href'));
-            menu[i].parentNode.className = '';
-            if (currentURL === pageHREF) {
-                menu[i].parentNode.className = 'active';
-            }
-        }
-    }
+
+<script>
+
 
 </script>
 

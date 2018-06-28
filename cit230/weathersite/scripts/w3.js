@@ -1,4 +1,6 @@
-  w3.includeHTML = function(cb) {
+"use strict";
+var w3 = {};  
+w3.includeHTML = function(cb) {
   var z, i, elmnt, file, xhttp;
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {

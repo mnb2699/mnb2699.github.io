@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head w3-include-html="modules/header.html">
+<head w3-include-html="modules/head.html">
 
     <title>Franklin</title>
 
@@ -9,20 +9,10 @@
 
 <body>
 
-    <header class="world">World of Weather
+    <header w3-include-html="modules/header.html">
     </header>
 
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="navMenu" class="hide">
-            <li class=""><a href="index.html">Home</a></li>
-            <li class="active"><a href="franklin.html">Franklin</a></li>
-            <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springfield.html">Springfield</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
-        </ul>
+    <nav  w3-include-html="modules/nav.html">
     </nav>
 
     <main>
@@ -94,38 +84,15 @@
         </article>
 
     </main>
-    <footer>
-        <section class="contact">
-            Meghan Brennan 999.999.9999 123 Main St. Anytown, US 99999 Google Map
-        </section>
-        <section class="footer-bar">&copy;2018 | All Rights Reserved | World of Weather | <span id="currentdate">Current Date Placeholder</span>
-        </section>
+    <footer w3-include-html="modules/footer.html">
     </footer>
 
 </body>
     <script src="scripts/w3.js"></script>
+    <script src="scripts/wayfinding.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
-
-
-
-    <script>
-        var urlString = document.location.href;
-        var urlArray = urlString.split('/');
-        var pageHREF = urlArray[urlArray.length - 1];
-
-        if (pageHREF !== "") {
-            menu = document.querySelectorAll('ul#navMenu li a');
-            for (i = 0; i < menu.length; i++) {
-                currentURL = (menu[i].getAttribute('href'));
-                menu[i].parentNode.className = '';
-                if (currentURL === pageHREF) {
-                    menu[i].parentNode.className = 'active';
-                }
-            }
-        }
-
-    </script>
+    <script src="scripts/modularize.js"></script>
 
 </html>

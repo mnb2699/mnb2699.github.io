@@ -9,9 +9,9 @@
 /* This wildcard applies to all elements ensuring a box layout model */
 
 .clearfix{
-    margin-left: auto;
+  margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
   
     
 }
@@ -28,7 +28,7 @@ nav,
 main,
 footer {
     /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: ;
+    max-width:;
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
@@ -85,6 +85,7 @@ nav ul li a {
     padding: 14px 16px;
     text-decoration: none;
     flex-grow: 1;
+
     
 }
 

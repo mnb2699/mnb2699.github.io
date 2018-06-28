@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
-<head>
+<head w3-include-html="modules/head.html">
+
     <title>Home</title>
 
 </head>
 
 <body>
 
-    <header class="world">
-        <img src="images/globe.jpg" alt="logo">World of Weather
+    <header w3-include-html="modules/header.html">
     </header>
 
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="navMenu" class="hide">
-            <li class=""><a href="index.html">Home</a></li>
-            <li><a href="franklin.html">Franklin</a></li>
-            <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springfield.html">Springfield</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
-        </ul>
+    <nav  w3-include-html="modules/nav.html">
     </nav>
 
     <header>
@@ -105,11 +95,11 @@
     
     <footer w3-include-html="modules/footer.html"></footer>
 
-    <script src="scripts/w3.js"></script>
-
-    <script src="scripts/index.js"></script>
-    <script src="scripts/currentdate.js"></script>
+     <script src="scripts/w3.js"></script>
+    <script src="scripts/wayfinding.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/modularize.js"></script>
 
 </body>
 
