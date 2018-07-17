@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head w3-include-html="modules/head.html">
+
+    <title>Home</title>
+
+</head>
+
+<body>
+    <div class="space">
+        <header w3-include-html="modules/header.html">
+        </header>
+
+        <nav w3-include-html="modules/nav.html">
+        </nav>
+
+        <header>
+
+        </header>
+
+        <main class="form">
+            <h1>Sign Up!</h1>
+            <p> This is where you can register for the "Cycle the Continental Divide" </p>
+            <form action="thanks.html" method="get">
+                <h3>Personal Information:</h3>
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" title="Min of 5 characters." pattern="[A-Za-z]+{5,50}" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="name@domain.com">
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+<br>
+                <div>
+                    <label for="date" id="date">Date of Birth:</label>
+                    <input type="date">
+                </div>
+                <br>
+                <div>
+                    <label for="region">State/Country:</label>
+                    <input type="text" name="region">
+                </div>
+
+                <h3>Additional Comments:</h3>
+                <div>
+                    <textarea name="comment" rows="4" cols="50" placeholder="Start Typing Here..."></textarea>
+                </div>
+
+
+
+
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+
+
+
+        </main>
+
+        <footer w3-include-html="modules/footer.html"></footer>
+
+        <script src="scripts/w3.js"></script>
+        <script src="scripts/wayfinding.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/modularize.js"></script>
+    </div>
+</body>
+
+</html>

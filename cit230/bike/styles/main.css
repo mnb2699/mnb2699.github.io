@@ -1,0 +1,207 @@
+/* Delete these CSS comments after reading. */
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+.clearfix{
+  margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+    
+}
+
+body {
+ font-family: 'Lato', sans-serif;    
+
+   
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width:;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+.world {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-family: 'Rock Salt', cursive;
+
+}
+.city {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+header h1 {}
+
+header img {}
+
+header .subheading {}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    background-color: yellowgreen;
+    font-family: 'Rock Salt', cursive;
+    font-size: 14px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: yellowgreen;
+    display: inline-grid;
+    
+}
+
+nav ul.hide {
+    display: none;
+    
+}
+
+nav ul li {
+    display: flex;
+    
+}
+
+nav ul li a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    flex-grow: 1;
+    
+}
+
+nav ul li.active a {
+    background-color: darkblue;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: cornsilk;
+}
+
+.nav .icon {
+    display: none;
+}
+
+main {}
+
+main h2 {}
+
+main figure { 
+}
+
+main figure img {
+    
+}
+
+section.forecast {
+    display: none;
+}
+
+
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+.col1{
+    float: left;
+    width: 100% !important;
+    text-align: center;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pic1, pic2, pic3{
+    margin: 5px;
+    
+}
+
+
+.pic1{
+    background-color: bisque;
+    border-radius: 25px;
+    padding: 5px;
+ 
+}
+
+.pic2{
+    background-color: coral;
+    border-radius: 25px;
+    padding: .5px;
+
+}
+
+.space{
+    margin: 50px;
+}
+
+.pic{
+    display: block;
+    margin-left: -50px;
+    margin-right: -50px;
+   
+    
+}
+
+.link{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    
+}
+
+.click{
+    font-size: 20px;
+}
+
+.great{
+    float: right;
+    
+}
+
+.pic3{
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 3px;
+    border-color: black;
+    margin: 5px;
+    padding: 3px;
+}
+
+footer {}
