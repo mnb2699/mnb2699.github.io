@@ -231,7 +231,7 @@ th,
 td {
     border: 2px solid #031926;
     padding: 5px;
-    text-align: center;
+   
 }
 
 th {
@@ -244,4 +244,8 @@ th {
 
 .center {
     text-align: center;
+}
+
+.left{
+    text-align: left;
 }
