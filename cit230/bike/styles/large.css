@@ -17,16 +17,7 @@
         padding: 0;
 
     }
-
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: darkblue;
-        display:
-    }
-
+    
     nav ul.hide {
         display: contents;
     }
@@ -40,11 +31,6 @@
         text-decoration: none;
 
     }
-
- nav ul li.active a {
-    background-color: darkblue;
-    color: white;
-}
 
 nav ul li a:hover {
     background-color: cornsilk;
@@ -79,4 +65,25 @@ nav ul li a:hover {
     content: "";
     display: table;
     clear: both;
+}
+
+.col2{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.row2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pic4{
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 3px;
+    border-color: black;
+    margin: 5px;
+    padding: 3px;
 }

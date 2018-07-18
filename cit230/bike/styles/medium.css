@@ -6,21 +6,12 @@
     nav button {
         display: none;
     }
-    /* hamburger button does not need to be shown in the medium on up views */
-    section.forecast {
-        display: contents;
-    }
-    /* show the 10-day forecast with the medium view and up */
+
     nav {
         list-style-type: none;
         margin: 0;
         padding: 0;
 
-    }
-
-    nav ul {
-        list-style-type: none;
-        background-color: #F3D1C8;
     }
 
     nav ul.hide {
@@ -38,7 +29,7 @@
     }
 
     nav ul li.active a {
-        background-color: darkblue;
+        background-color: #031926;
     color: white;
     }
 
@@ -81,3 +72,27 @@
     display: table;
     clear: both;
 }
+    .col2{
+    float: left;
+    width: 50% !important;
+    text-align: center;
+}
+
+.row2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pic4{
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 3px;
+    border-color: black;
+    margin: 5px;
+    padding: 3px;
+}
+    
+    table{
+        margin: 50px;
+    }
