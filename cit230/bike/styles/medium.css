@@ -11,6 +11,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+        color: white;
 
     }
 
@@ -21,7 +22,7 @@
     nav ul li {}
 
     nav ul li a {
-        color: black;
+        color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
